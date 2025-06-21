@@ -59,8 +59,8 @@ function handleLikeClick(id){
     //     return tweet.uuid === tweetId
     // })[0] (for just top tweets won't search for functionality on replies)
     
-    const replyLikeBtn = document.querySelector(`i[data-reply-retweet="${id}"]`)
-    replyLikeBtn.classList.toggle("liked") /* Find a way to actually do this */
+    // const replyLikeBtn = document.querySelector(`i[data-reply-retweet="${id}"]`)
+    // replyLikeBtn.classList.toggle("liked") /* Find a way to actually do this */
     
     const targetTweetObj = findTweetOrReplyById(id)
 
