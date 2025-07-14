@@ -161,7 +161,7 @@ function handleTweetBtnClick(){
     if(tweetInput.value){
         tweetsData.unshift({
             handle: `@Scrimba`,
-            profilePic: `images/scrimbalogo.png`,
+            profilePic: `/scrimbalogo.png`,
             likes: 0,
             retweets: 0,
             tweetText: tweetInput.value.trim(),
@@ -191,7 +191,7 @@ function renderReplyBtnClick(tweetId) {
         targetTweet.replies.unshift(
             {
                 handle: "@thePrincessHerself ✅",
-                profilePic: "/images/PrincessDp.png",
+                profilePic: "/princessdp.png",
                 tweetText: replyTextArea.value.trim(),
                 replies: [],
                 likes: 0,
@@ -327,7 +327,7 @@ function getFeedHtml(id){
                 <button data-render-new-reply-btn="${tweet.uuid}" class="reply-btn">Reply</button>
             </div> 
             <div class="tweet-inner"> 
-                <img src="/images/PrincessDp.png" class="profile-pic reply-dp">
+                <img src="/princessdp.png" class="profile-pic reply-dp">
                 <div> 
                     <p class="handle reply-handle">Replying to ${tweet.handle}</p>
                     <textarea placeholder="Post your reply" data-replytextarea="${tweet.uuid}"></textarea>
